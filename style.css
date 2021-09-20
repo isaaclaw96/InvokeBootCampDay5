@@ -1,0 +1,100 @@
+*{margin: 0; padding: 0;}
+
+:root {
+    --primary-text-color: #7027A0;
+    /* colorhunt to find color */
+    --secondary-text-color: #1DB9C3;
+/* can also do --title-font-size or --sub-title-text-color or --body-font-size */
+/* remember that it always uses double dash -- */
+/* make a layout example/template for text, color (primary,secondary,etc) */
+    --title-font-size: 28px;
+    --sub-title-font-size: 25px;
+    --body-font-size: 16px;
+
+    --product-list-padding: 25px;
+
+    --primary-bg-color: lightgreen;
+}
+#container {
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+/* header {
+    display:flex;
+    flex-direction: row;
+    justify content:flex-end;
+    align-items:center 
+}*/
+header ul {
+    list-style-type: none;
+    float: right;
+}
+header ul li {
+    display: inline-block;
+    margin: 20px 30px;
+    color: var(--primary-text-color); /*today*/
+    font-size: var(--body-font-size);
+    animation-name: aniLink;
+    animation-duration: 1s;
+    animation-fill-mode: both; /*to-read*/
+}
+header ul li:nth-child(1) {
+    animation-delay: 1s;
+}
+header ul li:nth-child(2) {
+    animation-delay: 1.5s;
+}
+header ul li:nth-child(3) {
+    animation-delay: 2s;
+}
+@keyframes aniLink {
+    from {
+        transform: translate(150px); /*read this too*/ /*look back at the transforming circle codes*/
+        opacity: 0;    
+    }
+    to{transform: translateX(0);
+        opacity: 1;    
+    }
+}
+.product {
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+
+    transition: transform 1s, box-shadow 1s; /*today*/
+}
+
+.product:hover {  /*today*/
+    transform: scale(1.2);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+
+}
+.product-img {
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    flex-grow: 1;
+    /* flex-grow: how much spaces they wanna take up in the parent's body, basically ratioing one content to another in the parent's body*/
+    /* eg. content-1 flex-grow:1; content-2 flex-grow:2, the ratioing to the parent's body size will be 1:2 */
+}
+.product-content {
+    flex-grow: 2; /*today*/
+    padding: var(--product-list-padding);
+}
+.product-title {
+    font-size: var(--title-font-size);
+    color: var(--primary-text-color);
+}
+.product-price {
+    font-size: var(--sub-title-font-size);
+}
+.product-desc {
+    font-size: var(--body-font-size);
+}

@@ -1,0 +1,269 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+:root {
+    --primary-bg-color: #5F5FFD;
+    --secondary-bg-color: white;
+    --header-font-size: 32px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+/* img {
+    width: 100%;
+    height: 100%;
+} */
+header { 
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #5F5FFD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    font-size: 15px;
+    color: white;
+}
+.section {
+    width: 100%;
+    height: 760px;
+    /* padding: 100px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-section {
+    background-color: #5F5FFD;
+    /* justify-content: space-between; */
+}
+#home-text {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.home-section h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 50px;
+    text-align: left justify;
+    color: white;
+}
+.home-section p {
+    font-size: 15px;
+    lighting-color: 32px;
+    margin-bottom: 30px;
+    color: darkslategray;
+}
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.btn-bg {
+    background-color: var(--secondary-bg-color);
+    color: darkslategray;
+}
+.img-size {
+    width: 400px;
+    height: 500px;
+}
+.about-section {
+    background-color: var(--secondary-bg-color);
+}
+#about-text {
+    width: 600px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+}
+#about-text h1 {
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.about-section p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.read-more {
+    font-weight: bold;
+    color: #8281ED;
+}
+.approach-section {
+    background-color: var(--primary-bg-color);
+}
+#approach-text {
+    width: 600px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#approach-header {
+    width: 600px;
+    height: 170px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#approach-content {
+    width: 600px;
+    height: 550px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items:flex-start ;
+}
+.client-section {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxes {
+    width: 1204px;
+    height: 180px;
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding:20px;
+    font-size: 28px;
+}
+.fab {
+    font-size: 150px;
+    text-align: center;
+    vertical-align: middle;
+    color: gray;
+}
+.brand-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo-here {
+    width: 150px;
+    height: 150px;
+}
+.touch-section {
+    background-color: #2E2E46;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer-one {
+    width: 285px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#footer-one h2 {
+    font-size: 40px;
+    color: #FCFCFB;
+}
+#footer-one p {
+    color: white;
+    font-size: 13px;
+    line-height: 30px;
+}
+#name-email {
+    width: 660px;
+    height: 200px;
+    background-color: #7A7A86;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 15px;
+    color: white;
+}
+#email-line {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-around;
+}
+.form-line {
+    width: 250px;
+    height: 75px;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around flex-start;
+    align-items: flex-start;
+    margin-right: 95px;
+}
+#message-line {
+    width: 600px;
+    height: 80px;
+    border-bottom: 2px solid white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly flex-start;
+    align-items: flex-start;
+}
+#send-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #EDEDED;
+    border-radius: 2px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold
+}
+#final-container {
+    width: 1240px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
